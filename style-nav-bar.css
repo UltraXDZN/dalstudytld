@@ -1,0 +1,224 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+    background-color: #2c2c2c;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    z-index: 3;
+}
+
+.section .nav {
+    width: calc(100vw - 16px);
+    height: 80px;
+    background-color: #1a1a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.music {
+    position: absolute;
+    width: 58;
+    height: 58px;
+    background-color: transparent;
+    left: 85px;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.music:hover {
+    transform: scale(1);
+    transition: all 0.2s ease;
+}
+
+
+.logoBig {
+    position: absolute;
+    width: 187px;
+    height: 170px;
+    background-color: transparent;
+    left: 200px;
+    transition: all 0.7s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.logoBig.scrolled {
+    width: 110px;
+    height: 80px;
+    transition: all 0.7s ease;
+
+}
+
+.logoBig img {
+    width: inherit;
+    height: inherit;
+}
+
+.logoBig.scrolled img {
+    width: 93px;
+    height: 85px;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+
+.logoSmall {
+    position: absolute;
+    width: 110px;
+    height: 28px;
+    background-color: transparent;
+    left: 200px;
+    top: -2px;
+    transition: all 0.7s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+
+.logoSmall img {
+    width: 110px;
+    height: 28px;
+}
+
+.logoSmall.appear {
+    object-fit: cover;
+    width: 110px;
+    height: 80px;
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+
+.logoSmall.appear img {
+    width: 110px;
+    height: 28px;
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+
+.header-wrapper {
+    width: 19.2rem;
+    height: 100%;
+    padding: 0 .56rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.header-wrapper img {
+    width: 100%
+}
+
+.header__navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap
+}
+
+.header__navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.header__navbar-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 1.24rem;
+    height: .2rem;
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #787878;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: background 500ms, color 500ms, -webkit-transform 500ms;
+    transition: background 500ms, color 500ms, -webkit-transform 500ms;
+    -o-transition: background 500ms, color 500ms, transform 500ms;
+    transition: background 500ms, color 500ms, transform 500ms;
+    transition: background 500ms, color 500ms, transform 500ms, -webkit-transform 500ms;
+    font-family: "Microsoft YaHei", "Arial", "Helvetica", sans-serif !important
+}
+
+.header__navbar-link:hover,
+.header__navbar-link--active {
+    background-color: #fff;
+    color: #000;
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12)
+}
+
+a {
+    all: unset;
+}
+
+.header__navbar-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    margin-left: .62rem
+}
+
+
+/*.content {*/
+/*  	height: 10000px;*/
+/*}*/

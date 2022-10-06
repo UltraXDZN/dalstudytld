@@ -1,0 +1,220 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 0px;
+}
+.sliding-background {
+  background-color: #000000;
+  background-repeat: repeat-y;
+}
+.game_logo {
+  width: 750px;
+  height: 512px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container.context {
+  background: white;
+  border: 1px solid #eee;
+  padding: 10px 25px;
+  margin-top: 50px;
+}
+.container.context h1 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.container.context h1 small {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container.context p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+.container.context h3 {
+  color: #0080a7;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.container.context h5 {
+  font-size: 12px;
+}
+.container.context code {
+  background: #eee;
+  font-size: 12px;
+}
+/* SLIDER AND POP UP GALLERY STARTS HERE */
+.awesome__slider div {
+  background: grey;
+  min-height: 300px;
+  text-align: center;
+  position: relative;
+}
+.awesome__slider div img {
+  width: 100%;
+}
+.awesome__slider div h3 {
+  padding-top: 50px;
+  color: white;
+  font-size: 50px;
+}
+.container {
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  z-index: 1;
+}
+.prev-img,
+.next-img {
+  display: block;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  z-index: 999;
+  cursor: pointer;
+  color: white;
+}
+.next-img {
+  right: 0;
+  left: auto;
+}
+.awesome__thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+  gap: 5px;
+  width: 100%;
+}
+.awesome__thumbnails .thumb {
+  width: 48%;
+  cursor: pointer;
+  position: relative;
+}
+.awesome__thumbnails .thumb img {
+  max-width: 100%;
+  -webkit-filter: blur(1.2px);
+          filter: blur(1.2px);
+}
+.awesome__thumbnails .thumb.active img {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-box-shadow: 0px 0px 8px 0px #e0dbdf;
+          box-shadow: 0px 0px 8px 0px #e0dbdf;
+}
+@media screen and (max-width: 749px) {
+  .awesome__thumbnails {
+    display: none;
+  }
+}
+.awesome__ba,
+.awesome__videos {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+          box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.25;
+  min-height: 3.2rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: baseline;
+  width: 98%;
+}
+.awesome__ba small,
+.awesome__videos small {
+  display: block;
+  font-weight: lighter;
+}
+.awesome__ba:hover,
+.awesome__videos:hover,
+.awesome__ba:focus,
+.awesome__videos:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.awesome__ba:hover,
+.awesome__videos:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+.awesome__ba:active,
+.awesome__videos:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.bord {
+  width: 98%;
+  border-top: 1px dashed #ccc;
+  margin: 10px 0;
+}
+@media screen and (max-width: 749px) {
+  .popup__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+  }
+  .popup__btns .bord {
+    display: none;
+  }
+}
+.description * {
+  margin: 0;
+  padding: 0;
+}
+.description .withMaxWidth {
+  font-family: "OCR A Extended";
+  max-width: 50%;
+  color: white;
+  font-size: 19px;
+  text-align: justify;
+}
+.description .withMaxWidthTitle {
+  font-family: "OCR A Extended";
+  max-width: 50%;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}

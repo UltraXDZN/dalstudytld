@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Hakio";
+  src: url("./Assets/Font/Hakio.otf") format("opentype");
+}
+@font-face {
+  font-family: "Harukaze";
+  src: url("./Assets/Font/Harukaze.otf") format("opentype");
+}
+@font-face {
+  font-family: "OCR A Extended";
+  src: url("./Assets/Font/OCRAEXT.ttf") format("opentype");
+}
