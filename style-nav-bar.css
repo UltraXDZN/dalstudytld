@@ -9,7 +9,7 @@ body {
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
-    display: flex;
+    display: inline-block;
     z-index: 3;
 }
 
